@@ -100,8 +100,9 @@ function setupStarterPark() {
     const b = G.buildings.find(bb => bb.type === t);
     G.staff.push(makeStaff('operator', b.id));
   }
-  G.staff.push(makeStaff('cleaner'));
-  G.staff.push(makeStaff('cleaner'));
+  // standby operators take over new rides as soon as they are built
+  for (let i = 0; i < 4; i++) G.staff.push(makeStaff('operator'));
+  for (let i = 0; i < 7; i++) G.staff.push(makeStaff('cleaner'));
 }
 
 // ---------------------------------------------------------------- agents

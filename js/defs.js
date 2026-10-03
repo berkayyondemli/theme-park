@@ -207,7 +207,7 @@ const GOALS = [
   { id: 'toys', text: 'Open a Toy Store', reward: 800, check: g => hasBuilding(g, 'toystore') },
   { id: 'earn10k', text: 'Earn $10,000 in total', reward: 1000, check: g => g.lifetime >= 10000 },
   { id: 'restaurant', text: 'Open a Grand Restaurant', reward: 1500, check: g => hasBuilding(g, 'restaurant') },
-  { id: 'staff8', text: 'Grow your team to 8 staff', reward: 800, check: g => g.staff.length >= 8 },
+  { id: 'staff20', text: 'Grow your team to 20 staff', reward: 1500, check: g => g.staff.length >= 20 },
   { id: 'rating90', text: 'Reach a park rating of 90% with 50+ guests', reward: 2500, check: g => g.rating >= 90 && g.guests.length >= 50 },
   { id: 'guests120', text: 'Have 120 guests in the park at once', reward: 3000, check: g => g.guests.length >= 120 },
   { id: 'rides8', text: 'Run 8 different rides', reward: 4000, check: g => g.buildings.filter(b => DEFS[b.type].cat === 'ride').length >= 8 },

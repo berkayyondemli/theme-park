@@ -362,7 +362,7 @@ const UI = {
     this.modal(`<div class="marquee"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <h2>Welcome to Showtime <span class="red">Park</span></h2>
       <p class="lead">You're the Entertainer, and this park is your business. The gates open at 08:00.</p>
-      <p>You start with a <b>Thunder Coaster</b>, a <b>Speed Train</b>, <b>Jackpot Games</b> and a <b>Splash Pool</b>, plus a team of five: three ride operators and two cleaners.</p>
+      <p>You start with a <b>Thunder Coaster</b>, a <b>Speed Train</b>, <b>Jackpot Games</b> and a <b>Splash Pool</b>, plus a team of fourteen: seven ride operators (three at work, four on standby for your next rides) and seven cleaners.</p>
       <h4>How to play</h4>
       <ul>
         <li>Guests pay to enter, ride, eat and shop. Keep them happy and they'll stay longer and spend more.</li>

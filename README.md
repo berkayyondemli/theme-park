@@ -16,7 +16,7 @@ python3 -m http.server 8000
 ## What you start with
 
 - **Thunder Coaster**, **Speed Train**, **Jackpot Games** and a **Splash Pool**
-- A team of five: three ride operators (coaster, train, jackpot) and two cleaners
+- A team of fourteen: seven ride operators (three running the coaster, train and jackpot, four on standby who take over new rides automatically) and seven cleaners
 - $8,000 in cash and a small path network with room to grow
 
 ## How it works
