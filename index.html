@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Showtime Park</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- @@BODY_START@@ -->
+<div id="app">
+  <canvas id="game" aria-label="Your theme park"></canvas>
+
+  <header id="hud">
+    <div class="brand">Showtime <span>Park</span></div>
+    <div class="stats">
+      <div class="stat"><span class="lbl">Cash</span><b id="hud-money">$0</b></div>
+      <div class="stat"><span class="lbl">Guests</span><b id="hud-guests">0</b></div>
+      <div class="stat"><span class="lbl">Rating</span><b id="hud-rating">0%</b><span class="stars" id="hud-stars"></span></div>
+      <div class="stat"><span class="lbl" id="hud-day">Day 1</span><b id="hud-time">08:00</b></div>
+      <div class="stat lvl"><span class="lbl">Park level</span><b id="hud-level">0</b><i class="lvlbar"><i id="hud-lvlfill"></i></i></div>
+    </div>
+    <div class="speed" role="group" aria-label="Game speed">
+      <button data-speed="0" title="Pause (Space)">❚❚</button>
+      <button data-speed="1" title="Normal speed (1)">▶</button>
+      <button data-speed="2" title="Fast (2)">▶▶</button>
+      <button data-speed="4" title="Fastest (3)">▶▶▶</button>
+    </div>
+    <nav class="menu">
+      <button id="btn-staff">Staff</button>
+      <button id="btn-finance">Finances</button>
+      <button id="btn-goals">Goals <span id="goal-count" class="pill"></span></button>
+      <button id="btn-menu" aria-label="Game menu">☰</button>
+    </nav>
+  </header>
+
+  <aside id="star">
+    <div class="star-head">
+      <div class="avatar" aria-hidden="true">🎩</div>
+      <div><div class="star-name">You, the Entertainer</div><div class="star-sub" id="star-status">Ready to perform</div></div>
+    </div>
+    <div class="star-actions">
+      <button id="btn-show" class="primary">Perform show</button>
+      <button id="btn-move">Walk to…</button>
+      <button id="btn-fireworks">Fireworks <small>$1,500</small></button>
+      <button id="btn-ads">Ad campaign <small>$2,000</small></button>
+    </div>
+  </aside>
+
+  <section id="build">
+    <div class="tabs" role="tablist" id="build-tabs"></div>
+    <div class="items" id="build-items"></div>
+  </section>
+
+  <aside id="inspector" hidden></aside>
+  <div id="toasts" aria-live="polite"></div>
+  <div id="tooltip" hidden></div>
+  <div id="modal" hidden><div class="card" id="modal-card"></div></div>
+</div>
+<!-- @@BODY_END@@ -->
+<script src="js/defs.js"></script>
+<script src="js/sim.js"></script>
+<script src="js/render.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
